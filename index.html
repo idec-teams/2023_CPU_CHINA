@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width,initical-scale=1.0">
+<title>index</title>
+	<link href="index.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+	<div id="top">
+	<button onclick="topFunction()" id="myBtn" title="Back to top"></button>
+<script>
+// 当网页向下滑动 20px 出现"返回顶部" 按钮
+window.onscroll = function() {scrollFunction()};
+ 
+function scrollFunction() {console.log(121);
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+ 
+// 点击按钮，返回顶部
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+	</div>
+	<div id="nav">
+		<img src="images/队伍logo.png" alt="" style="width:7.025vw;height:3.325vw;margin-right:10rem;margin-left:5rem;margin-top:0.6vw"/>
+		
+		<div class="items">
+        <div class="menu">
+		<a href="index.html" class="function">HOME</a>
+			</div>
+		</div>
+		<div class="items">
+			<div class="menu1">
+		<a href="html/PROJECT.html" class="function">PROJECT</a>
+		<div class="drop"><a href="html/PROJECT.html">Introduction</a></div>
+        <div class="drop">Results</div>
+        <div class="drop"><a href="NOTEBOOK.html">Timeline</a></div>
+			</div>
+		</div>
+		<div class="items">
+			<div class="menu2">
+			<a href="html/MEMBERS.html" class="function">TEAM</a>
+                <div class="drop"><a href="html/MEMBERS.html">Members</a></div>
+                <div class="drop"><a href="html/SOCIAL MEDIA.html">Social Media</a></div>
+				<div class="drop"><a href="SOCIAL MEDIA.html">Sponsors</a></div>
+			</div>
+		</div>
+		<div class="items">
+			<div class="menu3">
+			<span><a href="DOCUMENTATION.html" class="function">DOCUMENTATION</a></span>
+                <div class="drop"><a href="DOCUMENTATION.html">Models</a></div>
+                <div class="drop"><a href="DOCUMENTATION.html">Protocols</a></div>
+                <div class="drop">Webinar China</div>
+	</div>
+		</div>
+	</div>
+	
+<div id="aaa">
+	<h1 style="font-family:Baskerville, Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif', Palatino">Rational Design of Norcoclaurine Synthase
+Using Molecular Simulation and Deep Learning</h1>
+	<p>As an industry concerned with people's livelihood, the chemical and pharmaceutical industry is still in a period of rapid development and continues to contribute to the improvement of social health. However, at the same time, we cannot ignore the environmental impacts caused by pharmaceutical companies during their operations. Over the past decade, the chemical and related industries, especially the pharmaceutical industry, have faced serious environmental problems. Many traditional synthesis methods, while versatile, generate large amounts of waste, which puts increasing pressure on the chemical sector, and efforts must be made to reduce or optimize waste disposal processes.</p>
+	<p>Modern developments in chemistry and medicine require more accurate and efficient design of organic reactions. With the rise of artificial intelligence in computational chemistry, the natural sciences are more closely integrated with computers. In chemistry, the traditional approach based on experiments and physical models is gradually merging with the data-based machine learning paradigm. More and more data representations for computer processing have been developed and are constantly adapted to generative-based statistical models.</p>
+	<p>The rapid development of computer technology has given us the amazing ability to transform enzymes. Suitable mathematical models and optimization algorithms allow us to find optimal solutions in the huge space of enzyme sequences. Artificial enzyme design models biocatalytic reactions on computers, uses the powerful computational ability of computers to quickly search the huge protein sequence space, and obtains the optimal amino acid sequence by solving the optimization problem, thus making the enzyme a link in the chemical-pharmaceutical industry and realizing green production.</p>
+	</div>
+	<div id="bbb">
+		  <video alt="CPU_CHINA - Promotion Video - 2023iDEC" style="z-index:-1; width:49vw;height: 27vw;margin-top:2vw;margin-left:8%" controls autoplay loop muted>  
+    		<source src="Video.mp4" type="video/mp4">  
+		</video>
+	</div>
+	<div id="foot">
+		<p style="float: right;color:white;margin-right:10vw;margin-top:8vw;font-size: 1.5rem">© 2023 CPU_CHINA, 639 Longmian Avenue, Nanjing, Jiangsu, China</p>
+	</div>
+</body>
+</html>
