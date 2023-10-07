@@ -43,45 +43,52 @@ function topFunction() {
 		<div class="items">
 			<div class="menu1">
 		<a href="PROJECT.html" class="function">PROJECT</a>
+				<div style="background-color:rgba(255,255,255,0.8);border-bottom-left-radius: 2vw;border-bottom-right-radius: 2vw;width:16vw;margin-left:2vw;top:0">
 		<div class="drop"><a href="PROJECT.html#aaa">Introduction</a></div>
 		<div class="drop"><a href="PROJECT.html#bbb">Results</a></div>
-        <div class="drop"><a href="TIMELINE.html">Timeline</a></div>
+					<div class="drop"><a href="TIMELINE.html">Timeline</a></div></div>
 			</div>
 		</div>
 		<div class="items">
 			<div class="menu2">
 			<a href="MEMBERS.html" class="function">TEAM</a>
+				<div style="background-color:rgba(255,255,255,0.8);border-bottom-left-radius: 2vw;border-bottom-right-radius: 2vw;width:16vw;margin-left:2vw;top:0">
                 <div class="drop"><a href="MEMBERS.html#aaa">Members</a></div>
                 <div class="drop"><a href="SOCIAL MEDIA.html#aaa">Social Media</a></div>
-				<div class="drop"><a href="SOCIAL MEDIA.html#ccc">Sponsors</a></div>
+					<div class="drop"><a href="SOCIAL MEDIA.html#ccc">Sponsors</a></div></div>
 			</div>
 		</div>
 		<div class="items">
 			<div class="menu3">
 			<span><a href="DOCUMENTATION.html" class="function">DOCUMENTATION</a></span>
+				<div style="background-color:rgba(255,255,255,0.8);border-bottom-left-radius: 2vw;border-bottom-right-radius: 2vw;width:16vw;margin-left:2vw;top:0">
                 <div class="drop"><a href="DOCUMENTATION.html#aaa">Models</a></div>
                 <div class="drop"><a href="DOCUMENTATION.html#bbb">Protocols</a></div>
-				<div class="drop"><a href="DOCUMENTATION.html#ccc">Webinar China</a></div>
+					<div class="drop"><a href="DOCUMENTATION.html#ccc">Webinar China</a></div></div>
 	</div>
 		</div>
 	</div>
 	<div id="float">
 		<h6>DOCUMENTATION</h6>
 		
-		<p style="font-size:1.2rem"><a href="#aaa" class="website">Models</a></p>
-		<p style="font-size:1.2rem"><a href="#bbb" class="website">Protocols</a></p>
-		<p style="font-size:1.2rem"><a href="#ccc" class="website">Webinar China</a></p>
+		<p style="font-size:1.2vw"><a href="#aaa" class="website">Models</a></p>
+		<p style="font-size:1.2vw"><a href="#hts" class="website"><i>How to start</i></a></p>
+		<p style="font-size:0.8vw"><a href="#req" class="website"><i>· Requirements</i></a></p>
+		<p style="font-size:0.8vw"><a href="#beg" class="website"><i>· Begin</i></a></p>
+		<p style="font-size:1.2vw"><a href="#int" class="website"><i>Introduction</i></a></p>
+		<p style="font-size:1.2vw"><a href="#bbb" class="website">Protocols</a></p>
+		<p style="font-size:1.2vw"><a href="#ccc" class="website">Webinar China</a></p>
 	</div>
 <div id="aaa">
 	<h1>Models</h1>
 	<br />
 		<h2 style="color:#083643">RetKcat: <br />A novel neural network for Kcat prediction</h2>
-		<h2>How to start</h2>
-		<h3>Requirements</h3>
+		<h2 id="hts">How to start</h2>
+		<h3 id="req">Requirements</h3>
 		
 	    <p><strong><em>freeze.yml</em></strong> and <strong><em>requirements.txt</em></strong> were provided in the folder "RetKcat", you can install the packages by running the following command in the folder you want to install <strong><em>RetKcat</em></strong>. The model that was trained on an RTX 3090 costs an average of 19 Gib memory and also 16 Gib on an RTX 4090 while predicting is available on an RTX 3070Ti with 6Gib on average via pre-trained model state provided by us. A large amount of evidence shows that this model will have a better performance with a higher hidden dimension, which is 64 in our work due to the limit of GPU memory.</p>
 		
-		<h2>Begin</h2>
+		<h3 id="beg">Begin</h3>
 	    <p>First of all, run process.py in the child folder <strong>bin</strong>.<br />
         We recommend conda to construct an environment <em>(may need to install some packages which were provided by others)</em></p>
 		<textarea id="copy" class="codes" readonly>conda env create -f freeze.yml -n RetKcat
@@ -112,7 +119,7 @@ conda activate RetKcat</textarea>
 		<p>and run <strong>predict.py</strong>, out file will appear in the current folder, a temporary file input. pkl will be created and then removed after predicting.</p>
 		<br />
 		
-		<h2>Introduction</h2>
+		<h2 id="int">Introduction</h2>
 	    <p>The neural network can be divided into two parts: The first part utilizes a retentive network (RetNet) to extract protein features. This is achieved through a combination of causal masking and exponential decay along relative distances, which are combined into a single matrix. The second part employs graph convolutional networks (GCN) to capture substrate characteristics.</p><br />
 		<img src="../images/construction.png"  alt="" style="margin-left: 1.2vw;width:56.2875vw;height:40.5vw"/>
 	    
