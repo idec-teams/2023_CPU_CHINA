@@ -1,7 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
-html{
-	font-size:10px
+html,body{
+	font-size:10px;
+	width:100%;
+}
+body{
+	min-width: 1200px;
+	overflow: scroll
 }
 a{
 	text-decoration: none
@@ -120,7 +125,7 @@ p{
 #myBtn {
 			position: fixed;
 			bottom: 8vw;
-			right: 6vw;
+			right: 4vw;
 			z-index: 99;
 			border: none;
 			cursor: pointer;
@@ -142,7 +147,7 @@ p{
 	width:100%;
 	height:4.5vw;
 	float:left;
-	background-color:#083643;
+	background:linear-gradient(rgba(8,54,67,1),rgba(184,236,215,1));
 	top:0;
 	left:0;
 	right:0
@@ -150,6 +155,15 @@ p{
 }
 /*侧边导航栏*/
 
+#float{
+	height:20vw;
+	position: fixed;
+	margin-top:10vw;
+	margin-left: 3vw;
+	font-size: 1.5vw;
+	font-weight: normal
+	
+}
 #aaa{
 	width:60%;
 	height:120rem;
@@ -202,6 +216,7 @@ p{
 	background-color: #FEF5F5;
 	border-radius: 5vw;
 	box-shadow: 10px 7px 10px 1px #DCD7D7 ;
+	z-index: -99
 }
 #ccc{
 	width:60%;
@@ -218,45 +233,52 @@ p{
 }
 #foot{
 	width:100%;
-	height:12vw;
-	background-color:#083643;
-	margin-top:5vw;
+	height:15vw;
+	background:linear-gradient(#fff,rgba(184,236,215,0.9),rgba(8,54,67,0.5));
+	margin-top:8vw;
 	float:left;
+	bottom:0
 	
 }
 /*导航栏*/
 .function:link,.function:visited {
 			display:inline-block;
-		    width:15vw;
+		    width:16vw;
 			font-family: Bronova;
 			font-weight:bold;
 			font-size: 1.2vw;
 			color: rgba(184,236,215,1);
 			background-color:rgba(8,54,67,1);
+	
 			text-align:center;
-			padding:1rem;
+			padding:0.1vw;
 			text-decoration:none;
 			text-transform:uppercase;
 			border:2px solid rgba(255,255,255,0);
-			border-radius: 1rem;
-	z-index: 999;
+			border-radius: 2.6vw;
+	height:2vw;
+	padding-bottom:1.5vw;
+	margin-top: 0.2vw;
+	margin-bottom: 0.2vw;
 		}
 		.function:hover,.function:active {
 			text-decoration: underline;
-			border-radius: 1rem;
-			filter: drop-shadow(4px 4px 4px rgba(255,255,255,0.80));
+			border-radius: 2.6vw;
+			filter: drop-shadow(4px 4px 8px rgba(255,255,255,0.80));
+			border:2px solid rgba(184,236,215,1);
 			}
 
 .items {
     width:100%;
-	margin-left: 10vw;
-	height: 5vw;
+	left:0;
+	top:0;
+	height: 0;
 	float: left;
-	z-index: 999
+	background: rgba(8,54,67,1);
 }
 
 .menu{
-    width: 15vw;
+    width: 20vw;
     height: 4vw;
     background: rgba(8,54,67,1);
     line-height: 3.5vw;
@@ -267,12 +289,13 @@ p{
 	z-index: 99;
 	float: left;
 	margin-left:20vw;
-	border-radius: 1rem
+	border-radius: 1rem;
+	
 	
 }
 .menu:hover{
     overflow:visible;
-	width:15vw;
+	width:20vw;
     color: rgba(8,54,67,1);
     z-index:999;
     cursor:pointer;
@@ -292,7 +315,8 @@ p{
 	z-index: 99;
 	float: left;
 	margin-left:36vw;
-	border-radius: 1vw
+	border-radius: 1vw;
+	
 	
 }
 .menu1:hover{
@@ -301,6 +325,7 @@ p{
     color: rgba(8,54,67,1);
     z-index:999;
     cursor:pointer;
+	
 }
 .menu2{
     width: 20vw;
@@ -336,12 +361,12 @@ p{
     position:fixed;
 	top:0;
     overflow:hidden;
-	font-family: Bronova;
+	font-family:Bronova;
 	font-weight: Bold;
 	font-size: 1.4vw;
 	z-index: 99;
 	float: left;
-	margin-left:68vw;
+	margin-left:66vw;
 	border-radius: 1vw
 	
 }
@@ -362,7 +387,7 @@ p{
     overflow: hidden;
 	font-weight:normal;
 	margin-left:2.2vw;
-	font-weight:bold;
+	font-weight: bold;
 	font-size:1vw;
 	color:rgba(8,54,67,1);
 	border:2px solid rgba(255,255,255,0);
@@ -377,4 +402,55 @@ p{
 	border: 2px solid #0E5468;
 	border-radius: 1.6vw;
 	color:#53831F
+}
+	.row2{
+		
+		padding-left:23vw;
+		margin-left:36vw;
+		width:28vw;
+		margin-top:2.6vw;
+		z-index: 11;
+		
+	}
+	.row2 img{
+		float: left;
+		margin-left:4vw
+	}
+.pichange{
+	width:2vw;
+	height:2vw;
+	overflow: hidden;
+	border:2px solid rgba(255,255,255,0);
+}
+.pichange img{
+	border:2px solid rgba(255,255,255,0);
+	padding-left:0;
+	padding-top: 5px;
+	height:20px;
+	width:20px;
+}
+.pichange:hover img:last-child{
+	display: block;
+	border:2px solid rgba(255,255,255,0);
+	cursor: pointer
+}
+.pichange:hover img:first-child{
+	display: none;
+	border:2px solid rgba(255,255,255,0);
+	cursor: pointer
+}
+.pichange img:last-child{
+	display: none;
+	border:2px solid rgba(255,255,255,0);			
+}
+.website{
+	text-decoration: none;
+	color:#476C5E
+}
+.website:hover{
+	text-decoration: underline;
+	color:#9FA939
+}
+.website:visited{
+	color:#9FA939
 }
