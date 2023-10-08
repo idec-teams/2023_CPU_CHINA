@@ -317,6 +317,7 @@ a{
 			display:inline-block;
 		    width:16vw;
 			font-family: Bronova;
+	        src:url("../font/Bronova Bold.ttf");
 			font-weight:bold;
 			font-size: 1.2vw;
 			color: rgba(184,236,215,1);
@@ -384,6 +385,7 @@ a{
 	top:0;
     overflow:hidden;
 	font-family: Bronova;
+	src:url("../font/Bronova Bold.ttf");
 	font-weight: Bold;
 	font-size: 1.4vw;
 	z-index: 99;
@@ -411,6 +413,7 @@ a{
 	top:0;
     overflow:hidden;
 	font-family: Bronova;
+	src:url("../font/Bronova Bold.ttf");
 	font-weight: Bold;
 	font-size: 1.4vw;
 	z-index: 99;
@@ -435,7 +438,8 @@ a{
     position:fixed;
 	top:0;
     overflow:hidden;
-	font-family:Bronova;
+	font-family: Bronova;
+	src:url("../font/Bronova Bold.ttf");
 	font-weight: Bold;
 	font-size: 1.4vw;
 	z-index: 99;
