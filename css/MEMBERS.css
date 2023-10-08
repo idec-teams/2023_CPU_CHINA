@@ -4,10 +4,12 @@ html,body{
 	font-size:10px;
 	width:100%;
 	display: grid;
+	
 }
 body{
 	min-width: 1200px;
-	overflow: scroll
+	overflow:scroll
+	
 }
 a{
 	text-decoration: none
@@ -57,7 +59,7 @@ a{
 	#bbb{width:100vw}
 	#ccc{width:100vw}
 }
-@media(max-width:1200px){
+@media(max-width:1280px){
 	body{width:100vw;}
 	#nav{width:100vw}
 	#aaa{width:100vw}
@@ -75,7 +77,7 @@ a{
 	#bbb{width:100vw}
 	#ccc{width:100vw}
 }
-@media(max-width:1400px){
+@media(max-width:1440px){
 	body{width:100vw;}
 	#nav{width:100vw}
 	#aaa{width:100vw}
@@ -93,7 +95,16 @@ a{
 	#bbb{width:100vw}
 	#ccc{width:100vw}
 }
-@media(max-width:1600px){
+@media(max-width:1620px){
+	body{width:100vw;}
+	#nav{width:100vw}
+	#aaa{width:100vw}
+	#eee{width:100vw}
+	#ddd{width:100vw}
+	#bbb{width:100vw}
+	#ccc{width:100vw}
+}
+@media(max-width:1920px){
 	body{width:100vw;}
 	#nav{width:100vw}
 	#aaa{width:100vw}
@@ -116,7 +127,7 @@ h3{
 	font-size: 2rem;
 }
 p{
-	font-size:1.2vw;
+	font-size:1.2rem;
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	word-break: normal;
 }
@@ -163,7 +174,7 @@ p{
 }
 #aaa{
 	width:60%;
-	height:122rem;
+	height:1380px;
 	float:left;
 	margin-left:15vw;
 	margin-top:10vw;
@@ -177,7 +188,7 @@ p{
 }
 #eee{
 	width:60%;
-	height:70rem;
+	height:77rem;
 	float:left;
 	margin-left:15vw;
 	margin-top:5vw;
@@ -190,7 +201,7 @@ p{
 }
 #ddd{
 	width:60%;
-	height:85rem;
+	height:886px;
 	float:left;
 	margin-left:15vw;
 	margin-top:5vw;
@@ -203,7 +214,7 @@ p{
 }
 #bbb{
 	width:60%;
-	height:560rem;
+	height:5520px;
 	float:left;
 	margin-left:15vw;
 	margin-top:5vw;
@@ -216,7 +227,7 @@ p{
 }
 #ccc{
 	width:60%;
-	height:90rem;
+	height:930px;
 	float:left;
 	margin-left:15vw;
 	margin-top:5vw;
@@ -476,9 +487,9 @@ p{
 			padding-left:1.5vw;
 			font-family: Calibri;
 			color:rgba(112,112,112,1);
-			font-size: 18px;
+			font-size: 20px;
 			word-break: normal;
-			width:40vw
+			width:500px
 			
 			}
 .members_si1{
